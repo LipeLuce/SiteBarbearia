@@ -1,0 +1,233 @@
+@charset "UTF-8";
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #0F1115;
+  color: #F3F2EE;
+}
+
+h1, h2 {
+  font-family: "Cinzel", serif;
+  color: #C2A46D;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.75rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 1.375rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.25rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+.navbar {
+  background-color: #0F1115;
+  border-bottom: 1px solid #1C1F26;
+}
+.navbar .navbar-brand {
+  font-family: "Cinzel", serif;
+  color: #C2A46D;
+  font-weight: 700;
+}
+.navbar .nav-link {
+  color: rgba(243, 242, 238, 0.8) !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.navbar .nav-link.active, .navbar .nav-link:hover {
+  color: #C2A46D !important;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration-thickness: 1px;
+}
+
+.hero-section {
+  background-image: linear-gradient(rgba(15, 17, 21, 0.8), rgba(15, 17, 21, 0.8)), url("https://placehold.co/1920x1080/0F1115/C2A46D?text=Barbearia+X");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #F3F2EE;
+  padding: 10rem 0;
+}
+.hero-section .badge-vintage {
+  background-color: #C2A46D;
+  color: #0F1115;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+.hero-section .btn-cta {
+  background-color: #D34C2C;
+  border-color: #D34C2C;
+  color: #F3F2EE;
+  transition: transform 0.2s ease-in-out;
+  font-weight: 600;
+}
+.hero-section .btn-cta:hover {
+  background-color: rgba(211, 76, 44, 0.9);
+  border-color: rgba(211, 76, 44, 0.9);
+  transform: translateY(-2px);
+}
+.hero-section .btn-secondary-cta {
+  border: 1px solid #C2A46D;
+  color: #C2A46D;
+  background: transparent;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.hero-section .btn-secondary-cta:hover {
+  background-color: #C2A46D;
+  color: #0F1115;
+}
+
+.sobre p {
+  font-size: 1.125rem;
+}
+.sobre .icon-list {
+  list-style: none;
+  padding: 0;
+}
+.sobre .icon-list li {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+  color: #F3F2EE;
+}
+.sobre .icon-list li strong {
+  color: #8C6239;
+}
+.sobre .icon-list li::before {
+  content: "✓";
+  color: #C2A46D;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.servicos {
+  background-color: #0F1115;
+}
+.servicos .card {
+  background-color: #0F1115;
+  border: 1px solid #1C1F26;
+  transition: transform 0.3s ease;
+}
+.servicos .card:hover {
+  transform: translateY(-5px);
+}
+.servicos .card-title-service {
+  color: #F3F2EE;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.servicos .service-price {
+  background-color: #C2A46D;
+  color: #0F1115;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+}
+.servicos .most-popular-badge {
+  background-color: #C2A46D;
+  color: #0F1115;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.depoimentos .carousel-item p {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+}
+.depoimentos .client-name {
+  color: #C2A46D;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.depoimentos .rating {
+  color: #C2A46D;
+  font-size: 1.25rem;
+}
+
+.contato {
+  background-color: #F3F2EE;
+  color: #0F1115;
+  padding: 3rem 0;
+}
+.contato h2, .contato .form-label {
+  color: #0F1115;
+}
+.contato .form-control {
+  background-color: transparent;
+  border: 1px solid #1C1F26;
+  color: #0F1115;
+}
+.contato .form-control:focus {
+  box-shadow: none;
+  border-color: #D34C2C;
+}
+.contato .form-control::placeholder {
+  color: rgba(15, 17, 21, 0.6);
+}
+.contato .btn-submit {
+  background-color: #D34C2C;
+  color: #F3F2EE;
+  font-weight: 600;
+  border: none;
+}
+.contato .btn-whatsapp {
+  border: 1px solid #0F1115;
+  color: #0F1115;
+  background: transparent;
+  font-weight: 600;
+}
+
+.footer {
+  background-color: #0F1115;
+  color: #BEBDB9;
+  border-top: 1px solid #1C1F26;
+}
+.footer a {
+  color: #C2A46D;
+  transition: all 0.2s ease;
+}
+.footer a:hover {
+  color: #F3F2EE;
+}
+.footer .small-text {
+  font-size: 0.875rem;
+  color: #BEBDB9;
+}
+.footer .footer-cta {
+  font-weight: 600;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=estilos.css.map */

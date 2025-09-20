@@ -1,0 +1,44 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.servicos {
+    background-color: $primary-bg;
+
+    .card {
+        background-color: $primary-bg;
+        border: 1px solid $subtle-lines;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    .card-title-service {
+        color: $primary-color;
+        font-family: $font-inter;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .service-price {
+        background-color: $secondary-color;
+        color: $primary-bg;
+        font-weight: 700;
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+    }
+
+    .most-popular-badge {
+        background-color: $secondary-color;
+        color: $primary-bg;
+        font-weight: 700;
+        padding: 0.25rem 0.75rem;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+    }
+}

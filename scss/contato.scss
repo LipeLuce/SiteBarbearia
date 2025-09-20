@@ -1,0 +1,42 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+    
+
+.contato {
+    background-color: $primary-color;
+    color: $primary-bg;
+    padding: 3rem 0;
+
+    h2, .form-label {
+        color: $primary-bg;
+    }
+
+    .form-control {
+        background-color: transparent;
+        border: 1px solid $subtle-lines;
+        color: $primary-bg;
+
+        &:focus {
+            box-shadow: none;
+            border-color: $accent-color;
+        }
+
+        &::placeholder {
+            color: rgba($primary-bg, 0.6);
+        }
+    }
+
+    .btn-submit {
+        background-color: $accent-color;
+        color: $primary-color;
+        font-weight: 600;
+        border: none;
+    }
+
+    .btn-whatsapp {
+        border: 1px solid $primary-bg;
+        color: $primary-bg;
+        background: transparent;
+        font-weight: 600;
+    }
+}

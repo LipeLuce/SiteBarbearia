@@ -1,0 +1,29 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.navbar {
+    background-color: $primary-bg;
+    border-bottom: 1px solid $subtle-lines;
+
+    .navbar-brand {
+        font-family: $font-cinzel;
+        color: $secondary-color;
+        font-weight: 700;
+    }
+
+    .nav-link {
+        color: rgba($primary-color, 0.8) !important;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+
+        &.active, &:hover {
+            color: $secondary-color !important;
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 1px;
+        }
+    }
+}
+

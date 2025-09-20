@@ -1,0 +1,12 @@
+@use 'variaveis' as *;
+
+
+// Mixin para transições de botões
+@mixin button-hover-effect($bg-color, $border-color, $text-color) {
+    &:hover {
+        background-color: $bg-color;
+        border-color: $border-color;
+        color: $text-color;
+        transform: translateY(-2px);
+    }
+}

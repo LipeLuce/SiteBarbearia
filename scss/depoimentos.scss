@@ -1,0 +1,22 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.depoimentos {
+    .carousel-item {
+        p {
+            font-family: $font-inter;
+            font-style: italic;
+        }
+    }
+
+    .client-name {
+        color: $secondary-color;
+        font-family: $font-inter;
+        font-weight: 600;
+    }
+
+    .rating {
+        color: $secondary-color;
+        font-size: 1.25rem;
+    }
+}

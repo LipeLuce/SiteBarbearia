@@ -1,0 +1,27 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.footer {
+    background-color:$primary-bg;
+    color: #BEBDB9;
+    border-top: 1px solid $subtle-lines;
+
+    a {
+        color: $secondary-color;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color:  $primary-color;
+        }
+    }
+    
+    .small-text {
+        font-size: 0.875rem;
+        color: #BEBDB9;
+    }
+
+    .footer-cta {
+        font-weight: 600;
+        font-style: italic;
+    }
+}
