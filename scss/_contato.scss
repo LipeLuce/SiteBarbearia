@@ -1,14 +1,13 @@
 @use 'variaveis' as *;
 @use 'mixins' as *;
     
-
 .contato {
-    background-color: $primary-color;
-    color: $primary-bg;
+    background-color: $primary-bg;
+    color: $primary-color;
     padding: 3rem 0;
 
     h2, .form-label {
-        color: $primary-bg;
+        color: $primary-color;
     }
 
     .form-control {
@@ -30,13 +29,27 @@
         background-color: $accent-color;
         color: $primary-color;
         font-weight: 600;
-        border: none;
+        border: 1px solid $accent-color;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: $accent-color;
+            transform: translateY(-2px);
+        }
     }
 
     .btn-whatsapp {
-        border: 1px solid $primary-bg;
-        color: $primary-bg;
+        border: 1px solid $primary-color;
+        color: $primary-color;
         background: transparent;
         font-weight: 600;
+        transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: $accent-color;
+            transform: translateY(-2px);
+        }
     }
 }

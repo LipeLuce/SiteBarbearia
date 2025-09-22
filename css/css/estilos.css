@@ -214,12 +214,12 @@ h3 {
 }
 
 .contato {
-  background-color: #F3F2EE;
-  color: #0F1115;
+  background-color: #0F1115;
+  color: #F3F2EE;
   padding: 3rem 0;
 }
 .contato h2, .contato .form-label {
-  color: #0F1115;
+  color: #F3F2EE;
 }
 .contato .form-control {
   background-color: transparent;
@@ -237,13 +237,25 @@ h3 {
   background-color: #D34C2C;
   color: #F3F2EE;
   font-weight: 600;
-  border: none;
+  border: 1px solid #D34C2C;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.contato .btn-submit:hover {
+  background-color: transparent;
+  color: #D34C2C;
+  transform: translateY(-2px);
 }
 .contato .btn-whatsapp {
-  border: 1px solid #0F1115;
-  color: #0F1115;
+  border: 1px solid #F3F2EE;
+  color: #F3F2EE;
   background: transparent;
   font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.contato .btn-whatsapp:hover {
+  background-color: transparent;
+  color: #D34C2C;
+  transform: translateY(-2px);
 }
 
 .footer {
