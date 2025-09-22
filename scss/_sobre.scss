@@ -1,0 +1,43 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.about-section {
+    .about-image {
+        max-width: 10%;
+        height: auto;
+    }
+
+    .about-content {
+        h2 {
+            @include cinzel-font;
+            color: $secondary-color;
+            text-align: center;
+        }
+
+        p {
+            @include inter-font;
+            color: $off-white;
+            text-align: justify;
+            margin-bottom: 1rem;
+            
+            strong {
+                color: $primary-color;
+            }
+        }
+
+        ul {
+            color: $off-white;
+            list-style: none;
+            padding-left: 0;
+            
+            li {
+                @include inter-font;
+                margin-bottom: 0.5rem;
+                
+                strong {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

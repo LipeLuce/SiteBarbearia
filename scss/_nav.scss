@@ -1,0 +1,36 @@
+@use 'variaveis' as *;
+@use 'mixins' as *;
+
+.navbar {
+    background-color: $primary-bg;
+    padding: 1rem 0;
+
+    .navbar-brand {
+        @include cinzel-font;
+        font-size: 1.5rem;
+        color: $secondary-color;
+
+        .logo {
+            height: 80px;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .nav-link {
+        @include inter-font;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgba($primary-color, 0.8);
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: $primary-color;
+        }
+
+        &.active {
+            color: $primary-color;
+            border-bottom: 2px solid $secondary-color;
+        }
+    }
+}

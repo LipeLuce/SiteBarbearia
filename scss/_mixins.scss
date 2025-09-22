@@ -1,6 +1,17 @@
 @use 'variaveis' as *;
 
 
+// Mixin para a fonte Cinzel
+@mixin cinzel-font {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+}
+
+// Mixin para a fonte Inter
+@mixin inter-font {
+    font-family: 'Inter', sans-serif;
+}
+
 // Mixin para transições de botões
 @mixin button-hover-effect($bg-color, $border-color, $text-color) {
     &:hover {
