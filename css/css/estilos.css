@@ -224,14 +224,14 @@ h3 {
 .contato .form-control {
   background-color: transparent;
   border: 1px solid #1C1F26;
-  color: #0F1115;
+  color: #F3F2EE;
 }
 .contato .form-control:focus {
   box-shadow: none;
   border-color: #D34C2C;
 }
 .contato .form-control::placeholder {
-  color: rgba(15, 17, 21, 0.6);
+  color: rgba(243, 242, 238, 0.7);
 }
 .contato .btn-submit {
   background-color: #D34C2C;

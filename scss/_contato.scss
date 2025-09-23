@@ -13,7 +13,7 @@
     .form-control {
         background-color: transparent;
         border: 1px solid $subtle-lines;
-        color: $primary-bg;
+        color: $primary-color;
 
         &:focus {
             box-shadow: none;
@@ -21,7 +21,7 @@
         }
 
         &::placeholder {
-            color: rgba($primary-bg, 0.6);
+            color: rgba($primary-color, 0.7);
         }
     }
 
